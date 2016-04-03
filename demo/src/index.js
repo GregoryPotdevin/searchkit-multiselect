@@ -55,6 +55,13 @@ const Demo = React.createClass({
                 operator="AND"
                 listComponent={MultiSelect}
                 size={200}/>
+              <RefinementListFilter
+                id="writers"
+                title="Writers"
+                field="writers.raw"
+                operator="AND"
+                listComponent={MultiSelect}
+                size={200}/>
             </SideBar>
             <LayoutResults>
               <Hits mod="sk-hits-grid" hitsPerPage={10} itemComponent={MovieHitsGridItem}

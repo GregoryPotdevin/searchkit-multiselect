@@ -15,6 +15,10 @@ MultiSelect component for Searchkit, using react-select
 [coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.svg?style=flat-square
 [coveralls]: https://coveralls.io/github/user/repo
 
+## Preview
+
+![Preview](doc/preview.png?raw=true "Preview")
+
 ## Installation
 
 `npm install searchkit-multiselect --save`
@@ -24,6 +28,12 @@ MultiSelect component for Searchkit, using react-select
 - MultiSelect listComponent for `RefinementListFilter` and other compatible components
 - Dynamically filter the facet list
 - See `react-select` for a complete list of features
+
+
+![Initial](doc/initial.png?raw=true "Initial")
+
+
+![Dropdown](doc/dropdown.png?raw=true "Dropdown")
 
 ## Usage
 
@@ -63,6 +73,13 @@ const Demo = React.createClass({
                 id="actors"
                 title="Actors"
                 field="actors.raw"
+                operator="AND"
+                listComponent={MultiSelect}
+                size={200}/>
+              <RefinementListFilter
+                id="writers"
+                title="Writers"
+                field="writers.raw"
                 operator="AND"
                 listComponent={MultiSelect}
                 size={200}/>
