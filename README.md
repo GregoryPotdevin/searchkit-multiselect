@@ -4,7 +4,7 @@
 [![npm package][npm-badge]][npm]
 [![Coveralls][coveralls-badge]][coveralls]
 
-Describe searchkit-multiselect here.
+MultiSelect component for Searchkit, using react-select
 
 [build-badge]: https://img.shields.io/travis/user/repo/master.svg?style=flat-square
 [build]: https://travis-ci.org/user/repo
@@ -14,3 +14,72 @@ Describe searchkit-multiselect here.
 
 [coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.svg?style=flat-square
 [coveralls]: https://coveralls.io/github/user/repo
+
+## Installation
+
+`npm install searchkit-multiselect --save`
+
+## Features
+
+- MultiSelect listComponent for `RefinementListFilter` and other compatible components
+- Dynamically filter the facet list
+- See `react-select` for a complete list of features
+
+## Usage
+
+```
+<RefinementListFilter
+  id="actors"
+  title="Actors"
+  field="actors.raw"
+  operator="AND"
+  listComponent={MultiSelect}
+  size={200}/>
+```
+
+It is recommended to increase the size to benefit from the filter functionnality.
+
+## Example
+
+```
+const Demo = React.createClass({
+  render() {
+    return (
+      <SearchkitProvider searchkit={searchkit}>
+        <Layout>
+          <TopBar>
+            <SearchBox
+              autofocus={true}
+              searchOnChange={true}
+              prefixQueryFields={["actors^1","type^2","languages","title^10"]}/>
+          </TopBar>
+          <LayoutBody>
+            <SideBar>
+              <HierarchicalMenuFilter
+                fields={["type.raw", "genres.raw"]}
+                title="Categories"
+                id="categories"/>
+              <RefinementListFilter
+                id="actors"
+                title="Actors"
+                field="actors.raw"
+                operator="AND"
+                listComponent={MultiSelect}
+                size={200}/>
+            </SideBar>
+            <LayoutResults>
+              <Hits mod="sk-hits-grid" hitsPerPage={10} itemComponent={MovieHitsGridItem}
+                sourceFilter={["title", "poster", "imdbId"]}/>
+              <NoHits/>
+            </LayoutResults>
+          </LayoutBody>
+        </Layout>
+      </SearchkitProvider>
+    )
+  }
+})
+```
+
+## License
+
+MIT
