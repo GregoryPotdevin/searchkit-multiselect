@@ -30,11 +30,21 @@
     "react": "0.14.x",
     "react-dom": "0.14.x"
   },
-  "author": "",
-  "homepage": "",
+  "author": "Gregory Potdevin",
+  "homepage": "http://www.appcraft.fr/",
   "license": "MIT",
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GregoryPotdevin/searchkit-multiselect.git"
+  },
   "keywords": [
-    "react-component"
+    "react-component",
+    "react components",
+    "searchkit",
+    "elasticsearch",
+    "elastic search",
+    "react",
+    "search",
+    "widgets"
   ]
 }
