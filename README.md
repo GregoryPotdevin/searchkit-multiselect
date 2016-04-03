@@ -38,6 +38,10 @@ MultiSelect component for Searchkit, using react-select
 ## Usage
 
 ```
+import MultiSelect from "searchkit-multiselect"
+```
+
+```
 <RefinementListFilter
   id="actors"
   title="Actors"
