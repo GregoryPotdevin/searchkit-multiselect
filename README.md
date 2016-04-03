@@ -15,8 +15,6 @@ MultiSelect component for Searchkit, using react-select
 [coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.svg?style=flat-square
 [coveralls]: https://coveralls.io/github/user/repo
 
-## Preview
-
 ![Preview](doc/preview.png?raw=true "Preview")
 
 ## Installation
@@ -29,9 +27,11 @@ MultiSelect component for Searchkit, using react-select
 - Dynamically filter the facet list
 - See `react-select` for a complete list of features
 
+### Initial style
 
 ![Initial](doc/initial.png?raw=true "Initial")
 
+### Dropdown
 
 ![Dropdown](doc/dropdown.png?raw=true "Dropdown")
 
