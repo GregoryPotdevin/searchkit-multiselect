@@ -11,7 +11,7 @@ import {
 require('searchkit/theming/theme.scss')
 
 import MultiSelect from "../../src"
-require('../../src/multiselect.css')
+require('../../css/multiselect.css')
 
 const host = "http://demo.searchkit.co/api/movies"
 const searchkit = new SearchkitManager(host)
