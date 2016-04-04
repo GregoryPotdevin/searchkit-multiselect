@@ -1,19 +1,19 @@
 # searchkit-multiselect
 
 [![Travis][build-badge]][build]
-[![npm package][npm-badge]][npm]
+[![searchkit-multiselect][npm-badge]][npm]
 [![Coveralls][coveralls-badge]][coveralls]
 
 MultiSelect component for Searchkit, using react-select
 
-[build-badge]: https://img.shields.io/travis/user/repo/master.svg?style=flat-square
-[build]: https://travis-ci.org/user/repo
+[build-badge]: https://img.shields.io/travis/GregoryPotdevin/searchkit-multiselect/master.svg?style=flat-square
+[build]: https://travis-ci.org/GregoryPotdevin/searchkit-multiselect
 
-[npm-badge]: https://img.shields.io/npm/v/npm-package.svg?style=flat-square
-[npm]: https://www.npmjs.org/package/npm-package
+[npm-badge]: https://img.shields.io/npm/v/searchkit-multiselect.svg?style=flat-square
+[npm]: https://www.npmjs.org/package/searchkit-multiselect
 
-[coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.svg?style=flat-square
-[coveralls]: https://coveralls.io/github/user/repo
+[coveralls-badge]: https://img.shields.io/coveralls/GregoryPotdevin/searchkit-multiselect/master.svg?style=flat-square
+[coveralls]: https://coveralls.io/github/GregoryPotdevin/searchkit-multiselect
 
 ![Preview](doc/preview.png?raw=true "Preview")
 
