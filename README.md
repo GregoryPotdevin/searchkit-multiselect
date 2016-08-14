@@ -103,4 +103,6 @@ const Demo = React.createClass({
 
 ## License
 
-MIT
+Licensed under the MIT license
+
+Made with ♥ by [@GregoryPotdevin](https://twitter.com/GregoryPotdevin) at [AppCraft](http://www.appcraft.fr/)
